@@ -13,8 +13,6 @@ export class HomeComponent implements OnInit {
   }
 
   status:boolean=false;
-  showsidebar(){
-    this.status=!this.status;
-  }
+ 
 
 }

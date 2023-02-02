@@ -1,191 +1,593 @@
-
 <div class="header">
-        <div class="header-left">
-            <i class="fa-solid fa-bars icons" (click)="showsidebar()"></i>
-            <!-- <i id="menu" class="icon" (click)="showsidebar()">menu</i> -->
-            <img src="/assets/img1.png" alt=""/>
-        </div>
-        <div class="header-search">
-            <form action="">
-                <input type="text" placeholder="Search">
-                <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
-                <!-- <i class="fa-solid fa-microphone"></i> -->
-            </form>
-          
-        </div>
-        <div class="header-icon">
-            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-            <i class="fa-solid fa-video"></i>
-            <!-- <i class="fa-solid fa-video-plus"></i> -->
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-user"></i>
-        </div>
+    <div class="header-left">
+        <i class="fa-solid fa-bars icons"></i>
+        <!-- <i id="menu" class="icon" (click)="showsidebar()">menu</i> -->
+        <img src="/assets/img1.png" alt="" />
     </div>
-    <div class="mainbody">
-        <div class="sidebar" [ngClass]="status? 'show-sidebar':''">
-            <div class="sidebar-categoris">
-                <div class="sidebar-category">
-                     <i class="fa-sharp fa-solid fa-house"></i>
-                     <span>Home</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-solid fa-sort"></i>
-                    <span>Shorts</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-solid fa-notes-medical"></i>
-                    <span>Subscriptions</span>
-                </div>
+    <div class="header-search">
+        <form action="">
+            <input type="text" placeholder="Search">
+            <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+            <!-- <i class="fa-solid fa-microphone"></i> -->
+        </form>
+
+    </div>
+    <div class="header-icon">
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        <i class="fa-solid fa-video"></i>
+        <!-- <i class="fa-solid fa-video-plus"></i> -->
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+</div>
+<div class="mainbody">
+    <div class="sidebar" [ngClass]="status? 'show-sidebar':''">
+        <div class="sidebar-categoris">
+            <div class="sidebar-category">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                <span>Home</span>
             </div>
-            <hr/>
-            <div class="sidebar-categoris">
-                <div class="sidebar-category">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span>Library</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-sharp fa-solid fa-clock"></i>
-                    <span>Watch later</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-solid fa-download"></i>
-                    <span>Downloads</span>
-                </div>
-                <div class="sidebar-category">
-                    <i class="fa-sharp fa-solid fa-thumbs-up"></i>
-                    <span>Liked </span>
-                </div>
+            <div class="sidebar-category">
+                <i class="fa-solid fa-sort"></i>
+                <span>Shorts</span>
             </div>
-            <hr/>
+            <div class="sidebar-category">
+                <i class="fa-solid fa-notes-medical"></i>
+                <span>Subscriptions</span>
+            </div>
         </div>
-        <div class="videos">
-            <div class="video-container">
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr />
+        <div class="sidebar-categoris">
+            <div class="sidebar-category">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Library</span>
+            </div>
+            <div class="sidebar-category">
+                <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </div>
+            <div class="sidebar-category">
+                <i class="fa-sharp fa-solid fa-clock"></i>
+                <span>Watch later</span>
+            </div>
+            <div class="sidebar-category">
+                <i class="fa-solid fa-download"></i>
+                <span>Downloads</span>
+            </div>
+            <div class="sidebar-category">
+                <i class="fa-sharp fa-solid fa-thumbs-up"></i>
+                <span>Liked </span>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <div class="videos">
+        <div class="video-container">
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/CwS1qGFAQMk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Funny videos</h3>
+                    <div class="title">
+                        <h3>Funny videos</h3>
                         <span>5k views . 1 months Ago</span>
                     </div>
-                  </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe  src="https://www.youtube.com/embed/td1iSp2CgYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/-9VcW7MBDs8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/td1iSp2CgYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img src=" https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000"
+                            alt="">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src=" https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000" alt="">
-                        </div>
-                        <div class="title">
-                            <h3>Sona Kitna sona hai</h3>
+                    <div class="title">
+                        <h3>Sona Kitna sona hai</h3>
                         <span>10k views . 5 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>110k views . 5 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe src="https://www.youtube.com/embed/bF8MZa_7Itc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/K302tpYOfgw" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/bF8MZa_7Itc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>10k views . 11 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe  src="https://www.youtube.com/embed/qX-ZwtIt-xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/Q3FY9uO93Us" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>105k views . 6 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe  src="https://www.youtube.com/embed/6F18uCZCi0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/MpQbwtSiZ7E" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>60k views . 6 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe src="https://www.youtube.com/embed/bF8MZa_7Itc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/0LhBvp8qpro" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>110k views . 1 months Ago</span>
                     </div>
-                    </div>
                 </div>
-                <div class="video">
-                    <div class="video-thum">
-                        <iframe  src="https://www.youtube.com/embed/qX-ZwtIt-xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
                     </div>
-                    <div class="video-details">
-                        <div class="auther">
-                            <img src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
-                        </div>
-                        <div class="title">
-                            <h3>Audio song</h3>
+                    <div class="title">
+                        <h3>Audio song</h3>
                         <span>15k views . 9 months Ago</span>
                     </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/0LhBvp8qpro" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 1 months Ago</span>
                     </div>
                 </div>
-
-
-
-
-
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/K302tpYOfgw" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/bF8MZa_7Itc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>10k views . 11 months Ago</span>
                     </div>
                 </div>
-
-
-
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/MpQbwtSiZ7E" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>60k views . 6 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/-9VcW7MBDs8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/td1iSp2CgYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img src=" https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000"
+                            alt="">
+                    </div>
+                    <div class="title">
+                        <h3>Sona Kitna sona hai</h3>
+                        <span>10k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/0LhBvp8qpro" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 1 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/Q3FY9uO93Us" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>105k views . 6 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/cvdBjXsqLIQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe  src="https://www.youtube.com/embed/F6JCiwQCISU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>110k views . 5 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/CwS1qGFAQMk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Funny videos</h3>
+                        <span>5k views . 1 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/CwS1qGFAQMk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Funny videos</h3>
+                        <span>5k views . 1 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/CwS1qGFAQMk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Funny videos</h3>
+                        <span>5k views . 1 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/CwS1qGFAQMk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/KWowAz0PKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Funny videos</h3>
+                        <span>5k views . 1 months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="video-thum">
+                    <iframe src="https://www.youtube.com/embed/sv76HcgjLZM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="auther">
+                        <img
+                            src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg">
+                    </div>
+                    <div class="title">
+                        <h3>Audio song</h3>
+                        <span>15k views . 9 months Ago</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
- 
+    </div>
+</div>
